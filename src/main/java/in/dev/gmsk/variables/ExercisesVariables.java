@@ -25,7 +25,7 @@ public class ExercisesVariables {
 
         a = 1;
         System.out.println("a after a++ = " + a++);
-        System.out.println("And now the value of a is : "+a);
+        System.out.println("And now the value of a is : " + a);
 
         // Let's look at postfix increment in a variable declaration
         System.out.println("\n----------Test 3 ----------");
