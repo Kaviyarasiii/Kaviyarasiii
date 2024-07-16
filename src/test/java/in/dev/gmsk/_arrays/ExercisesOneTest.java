@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static in.dev.gmsk._arrays.ExercisesOne.*;
+import static in.dev.gmsk._arrays.Exercises_1.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ExercisesOneTest {
