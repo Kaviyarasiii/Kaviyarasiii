@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class ExercisesOne {
+public class Exercises_1 {
 
     public static List<List<Integer>> findAllTheSubsets(int[] arr, int targetSum) {
         List<List<Integer>> result = new ArrayList<>();
