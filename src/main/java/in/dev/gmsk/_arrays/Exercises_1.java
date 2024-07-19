@@ -88,9 +88,30 @@ public class Exercises_1 {
             } else if (arr[m] < target) {
                 l = m + 1;
             } else {
-               r = m - 1;
+                r = m - 1;
             }
         }
         return l;
+    }
+
+    public static void findSubsets(int[] arr, int sum, int index, List<Integer> current, List<List<Integer>> result) {
+        // Base case: if the sum is 0, add the current subset to the result
+        if (sum == 0) {
+            result.add(new ArrayList<>(current));
+            return;
+        }
+
+        // If we have gone through all elements or sum goes negative
+        if (index >= arr.length || sum < 0) {
+            return;
+        }
+
+        // Include the current element
+        current.add(arr[index]);
+        findSubsets(arr, sum - arr[index], index + 1, current, result);
+
+        // Exclude the current element
+        current.remove(current.size() - 1);
+        findSubsets(arr, sum, index + 1, current, result);
     }
 }
